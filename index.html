@@ -93,3 +93,94 @@
 
 </body>
 </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGE - Requisitos do Sistema</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0078d7;
+        }
+        ol {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Requisitos do Sistema</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Requisitos Funcionais</h2>
+            <ol>
+                <li>O sistema deve permitir que o usuário acesse com login (e-mail institucional) e senha.</li>
+                <li>O sistema deve exibir a lista dos espaços disponíveis para reserva.</li>
+                <li>O sistema deve permitir a solicitação de reserva dos espaços.</li>
+                <li>O sistema deve permitir aos responsáveis (coordenadores, diretores, funcionários do apoio) recusar ou aceitar reservas.</li>
+                <li>O sistema deve gerar relatórios mensais sobre as reservas.</li>
+                <li>O sistema deve exibir os horários disponíveis para determinado espaço.</li>
+                <li>O sistema deve permitir que o solicitante (professor, monitor, membro do grêmio) edite ou exclua uma reserva feita por ele.</li>
+                <li>O sistema deve enviar notificações no aplicativo para os responsáveis (funcionária do apoio, coordenação e direção) quando uma nova reserva for feita.</li>
+                <li>O sistema deve exibir o status do pedido da reserva (aprovado, recusado, em análise).</li>
+                <li>O sistema deve enviar notificações para quem solicitou (professor, monitor, membro do grêmio) quando a reserva for aprovada ou recusada.</li>
+                <li>Caso uma reserva for recusada, o sistema deve enviar uma justificativa para quem fez a reserva.</li>
+                <li>O sistema deve permitir à funcionária do apoio registrar a retirada e devolução de chaves.</li>
+                <li>O sistema deve ter um histórico com todas as reservas já feitas.</li>
+                <li>O sistema deve exibir os horários fixos de salas/laboratórios de professores e monitores.</li>
+                <li>O sistema deve exibir, para a funcionária do apoio, direção e coordenação, etiquetas visuais para identificar quais pedidos já foram aprovados, recusados e os que estão em análise.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Requisitos Não Funcionais</h2>
+            <ol>
+                <li>O sistema deve ser acessível em dispositivos móveis e na versão web.</li>
+                <li>O sistema deve garantir que não haja dupla reserva para o mesmo espaço no mesmo horário.</li>
+                <li>O sistema deve ter alta disponibilidade, com acesso 24h para consultas e reservas.</li>
+                <li>O sistema deve atualizar em tempo real a disponibilidade dos espaços.</li>
+                <li>O sistema deve garantir a visualização em abas separadas para salas, quadra, auditório e laboratórios.</li>
+                <li>O sistema deve permitir autenticação apenas com e-mail e senha institucionais, garantindo que apenas usuários autorizados tenham acesso.</li>
+                <li>O sistema deve aplicar níveis de permissão conforme o perfil (apoio, professor, monitor, grêmio, coordenação/direção), restringindo ou liberando funcionalidades específicas.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho de Engenharia de Software — Requisitos Funcionais e Não Funcionais</p>
+
+    </footer>
+</body>
+</html>
